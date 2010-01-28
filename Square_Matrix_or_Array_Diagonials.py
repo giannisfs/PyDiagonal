@@ -1,5 +1,7 @@
 #/usr/bin/env python
 
+from math import sqrt
+
 #4 x 4 Matrix
 SquareMatrixof4 = (1,2,3,4,\
                    2,3,5,7,\
@@ -7,18 +9,27 @@ SquareMatrixof4 = (1,2,3,4,\
                    3,4,5,6)
 
 #5 x 5 Matrix
-SquareMatrixof5 = (1,4,3,4,5,\
-                   2,3,4,5,8,\
-                   5,6,8,9,6,\
-                   1,2,3,4,5,\
-                   3,3,4,6,4)
+SquareMatrixof5 =  (1,4,3,4,5,\
+                    2,3,4,5,8,\
+                    5,6,8,9,6,\
+                    1,2,3,4,5,\
+                    3,3,4,6,4)
 #6 x 6 Matrix
-SquareMatrixof6 = (1,4,3,4,5,7,\
-                   2,3,4,5,8,6,\
-                   5,6,8,9,6,4,\
-                   1,2,3,4,5,3,\
-                   3,3,4,6,4,8,\
-                   4,5,6,8,7,6)
+SquareMatrixof6 =  (1,4,3,4,5,7,\
+                    2,3,4,5,8,6,\
+                    5,6,8,9,6,4,\
+                    1,2,3,4,5,3,\
+                    3,3,4,6,4,8,\
+                    4,5,6,8,7,6)
+
+def isValidSquare(seq):
+    """
+Any Sequence can be treated as a square as long as
+the square root of the number of elements is a positive integer"""
+    NumberOfElements = len(seq)
+    return sqrt(NumberOfElements).is_integer()
+
+
 
 def Diagonal(seq ,Diagonal="Left",X=4):
     diag = []
@@ -39,6 +50,8 @@ def Diagonal(seq ,Diagonal="Left",X=4):
         
         
 #examples
+##>>> isValidSquare(SquareMatrixof4)
+##True
 ##>>> Diagonal(SquareMatrixof6,X=6)
 ##[1, 3, 8, 4, 4, 6]
 ##>>> Diagonal(SquareMatrixof5,X=5)
