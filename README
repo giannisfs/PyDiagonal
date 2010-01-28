@@ -1,8 +1,10 @@
-Find left or right Diagonals from a sequence consisting of valid count of elements  (if represented as a square)
+Finds left or right Diagonals from a sequence consisting of valid number of elements (valid as a square)
+
 for example 
 4x4 =16 
 5x5 =25
 6x6 =36 
 ...
-so:
-it finds elements that belong to the diagonal of a square matrix or a square array
+Because: 
+Any Sequence can be treated as a square as long as the square root of the number of elements is be a positive integer
+
