@@ -1,5 +1,9 @@
 #/usr/bin/env python
 
+# 2010 Giannis Fysakis
+# E-mail: giannisfs@gmail.com
+# Released subject to the GPL 3 License
+
 from math import sqrt
 
 #4 x 4 Matrix
