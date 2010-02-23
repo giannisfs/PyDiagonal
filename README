@@ -6,5 +6,5 @@ for example
 6x6 =36 
 ...
 Because: 
-Any Sequence can be treated as a square as long as the square root of the number of elements is a positive integer (a natural number)
+Any Sequence can be treated as a square as long as the square root of the total number of elements is a positive integer (a natural number)
 
